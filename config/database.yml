@@ -47,8 +47,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: todoapp
-  username: root
-  password: orbio123
+# production:
+#   <<: *default
+#   database: todoapp
+#   username: root
+#   password: orbio123
