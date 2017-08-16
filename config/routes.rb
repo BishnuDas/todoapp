@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  # get 'home/index'
+  root "home#index"
 
   resources :todos
   # The priority is based upon order of creation: first created -> highest priority.
