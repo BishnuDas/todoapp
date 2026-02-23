@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold & Silver Prices</title>
+    <%= stylesheet_link_tag "gst_index", "data-turbo-track": "reload" %>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Current Gold & Silver Market Rates</p>
+            <p>Gold: <%= @gold_price %></p>
+            <p>Silver: <%= @silver_price %></p>
+        </div>
+
+        <div class="price-section">
+            <div class="price-grid">
+                <!-- Gold Price Card -->
+                <div class="price-card gold">
+                    <div class="price-icon">🥇</div>
+                    <div class="price-label">Gold Price</div>
+                    <div class="price-value">
+                        <%= @gold_price %>
+                        <span class="price-currency">USD</span>
+                    </div>
+                    <div class="price-change">
+                        ▲ +2.5% Today
+                    </div>
+                </div>
+
+                <!-- Silver Price Card -->
+                <div class="price-card silver">
+                    <div class="price-icon">🥈</div>
+                    <div class="price-label">Silver Price</div>
+                    <div class="price-value">
+                        <%= @silver_price %>
+                        <span class="price-currency">USD</span>
+                    </div>
+                    <div class="price-change">
+                        ▲ +1.8% Today
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="update-info">
+            Last Updated: <span><%= Time.now.strftime("%B %d, %Y at %I:%M %p") %></span>
+        </div>
+    </div>
+</body>
+</html>

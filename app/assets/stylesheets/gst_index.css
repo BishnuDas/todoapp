@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(135deg, #95a5a6 0%, #34495e 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    opacity: 0.9;
+    font-size: 16px;
+}
+
+.price-section {
+    padding: 40px;
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.price-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ecf0f1 100%);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.price-card.gold {
+    border-top: 5px solid #FFD700;
+}
+
+.price-card.silver {
+    border-top: 5px solid #C0C0C0;
+}
+
+.price-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.price-label {
+    font-size: 16px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.price-value {
+    font-size: 42px;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.price-currency {
+    font-size: 20px;
+    color: #95a5a6;
+    font-weight: normal;
+}
+
+.price-change {
+    font-size: 14px;
+    color: #27ae60;
+    margin-top: 10px;
+}
+
+.price-change.negative {
+    color: #e74c3c;
+}
+
+.update-info {
+    text-align: center;
+    padding: 20px;
+    color: #7f8c8d;
+    font-size: 14px;
+    background: #ecf0f1;
+    border-top: 2px solid #bdc3c7;
+}
+
+.update-info span {
+    font-weight: 600;
+    color: #34495e;
+}
